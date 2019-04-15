@@ -31,5 +31,11 @@ module.exports = {
     "react"
   ],
 
-  "extends": ["eslint:recommended", "plugin:react/recommended"]
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+
+  "rules": {
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "quotes": ["error", "single"], // specify whether double or single quotes should be used
+    "semi": ["error", "never"], // require or disallow use of semicolons instead of ASI
+  }
 }
